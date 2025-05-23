@@ -48,8 +48,6 @@ Run the CLI using:
 ```bash
 python HTR.py [OPTIONS]
 ```
-### ‼️IMPORTANT NOTE‼️
-Windows is supported for `--mode predict` but not for `--mode train` because the code is made with GPU acceleration in mind. There is an already pretrained model, `best_model.pth`, which was trained in WSL.
 ###  CLI Options
 
 | Argument         | Description |
