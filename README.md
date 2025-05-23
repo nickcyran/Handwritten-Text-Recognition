@@ -8,18 +8,18 @@ A deep learning-based offline handwritten text recognition system using CRNN (Co
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Dataset Setup](#-dataset-setup)
-- [Usage](#-usage)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Dataset Setup](#dataset-setup)
+- [Usage](#usage)
   - [Training](#training)
   - [Prediction](#prediction)
   - [Evaluation](#evaluation)
-- [Model Architecture](#-model-architecture)
-- [Data Processing](#-data-processing)
-- [Evaluation Metrics](#-metrics)
-- [Results](#-results)
+- [Model Architecture](#model-architecture)
+- [Data Processing](#data-processing)
+- [Evaluation Metrics](#metrics)
+- [Results](#results)
 
 ##  Features
 
