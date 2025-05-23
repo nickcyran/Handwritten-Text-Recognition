@@ -19,25 +19,25 @@ This project implements a deep learning-based offline handwritten text recogniti
 
 ```
 
-## Setup
-1. Unzip `project.zip` and navigate to the directory `.../project/`.
-2. Install dependencies:
+## Datasets  
 
-```bash
-pip install -r requirements.txt
-```
+This project uses the **IAM Handwriting Database** for training and testing the model. You'll need to download it to get started.
 
-You need the following packages:
-- `torch`
-- `torchvision`
-- `tqdm`
-- `Pillow`
-- `editdistance`
-- `matplotlib`
+### Setting up IAMLines
 
-‼️**IMPORTANT**‼️\
-3. Ensure that project structure matches diagram. 
+1.  **Register and Download:**
+    * First, you need to register on the [IAM Handwriting Database website](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database) to acces the download links.
+    * Once registered, download the following:
+        * **lines.tgz**: This contains the images of individual handwritten lines.
+        * **ascii.tgz**: This contains the ground truth text transcriptions, including `lines.txt`.
 
+2.  **Extract and Organize:**
+    * Extract the `lines.tgz` archive. This will create a `lines` folder containing sub folder of all the line images.
+    * Extract the `ascii.tgz` archive. Inside, you will find a file named `lines.txt`.
+    * Place the `lines` folder inside the `datasets/` directory of this project.
+    * Place the `lines.txt` file directly inside the `datasets/` directory.
+
+Once your dataset is set up like this, you should be able to run the training and testing scripts without any issues.
 
 ---
 
@@ -99,4 +99,13 @@ The system evaluates on:
 Metric plots are saved as:
 - `loss_over_epochs.png`
 - `error_rates_over_epochs.png`
+
+  
+## BestModel.pth 
+Train Loss: 0.0607
+Validation Loss: 0.0573
+CER: ~1.6% 
+WER: ~6.5% 
+![Loss-Over-Epoch](https://github.com/user-attachments/assets/63359afd-ffec-4c65-b45c-f5129937d56f)
+![Error-Rate-Over-Epochs](https://github.com/user-attachments/assets/b394f044-6a8b-4126-aa9a-c84a70af3c58)
 
